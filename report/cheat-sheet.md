@@ -1,6 +1,6 @@
 # Cheat sheets and checklists
 
-- Student name: NAME
+- Student name: Dylano Steenhuyzen
 - Github repo: URL
 
 ## Basic commands
