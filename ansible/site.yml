@@ -1,6 +1,57 @@
 # site.yml
----
 
+#deploy met: $ ansible-playbook -i hosts site.yml
+##Eerste server configureren
 - hosts: pu001
   become: true
   roles: []
+
+   #enable firewall voor http en https 
+   - firewalld:
+      service: https
+      permanent: yes
+      state: enabled
+
+   - firewalld:
+      service: http
+      permanent: yes
+      state: enabled   
+
+   #status van SELinux naar 'Enforcing' veranderen
+   - name: Enable SELinux
+    selinux:
+         policy: targeted
+         state: enforcing
+
+   #installeren van bash,bind,git,nano,tree,vim,wget
+   - name: install packages
+     apt: name={{ item }} update_cache=yes state=latest
+     with_items:
+       - bash-completion
+       - bind-utils
+       - git
+       - nano
+       - tree
+       - vim-enhanced
+       - wget
+   
+   #Gebruiken voor jezelf aanmaken
+   - name: Create a user
+       user: dylano
+       password: 'admin'
+       group: admin
+       groups: sudo
+       state: present
+       shell: /bin/bash
+       system: no
+       createhome: yes
+       home: /home/dylano
+
+   #Genereer een SSH-key    
+   - name: create 2048 bits ssh key
+     user:
+      name: dylano
+      generate_ssh_keys: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
+ 
