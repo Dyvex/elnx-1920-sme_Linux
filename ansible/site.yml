@@ -4,7 +4,7 @@
 ##Eerste server configureren
 - hosts: pu001
   become: true
-  roles: []
+  roles: bertvv.rh-base
 
    #enable firewall voor http en https 
    - firewalld:
