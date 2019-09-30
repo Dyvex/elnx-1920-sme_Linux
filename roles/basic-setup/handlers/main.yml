@@ -1,7 +1,0 @@
-
-- name: Enable firewalld
-      service: name=firewalld state=started enabled=yes
-
-- name: reload sysctl.conf
-      command: /sbin/sysctl -p
-      
