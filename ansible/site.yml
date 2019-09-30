@@ -6,4 +6,4 @@
   gather_facts: yes
   roles: 
     - bertvv.rh-base
-    - basic-setup
+
