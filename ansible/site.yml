@@ -1,37 +1,33 @@
 # site.yml
-
 #deploy met: $ ansible-playbook -i hosts site.yml
 ##Eerste server configureren
 - hosts: pu001
   become: true
   roles: bertvv.rh-base
-
+  tasks:
 #Toevoegen van de epel repositories  
-epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
-epel_repo_gpg_key_url: "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
-epel_repofile_path: "/etc/yum.repos.d/epel.repo"
-
    - name: 1.Check if EPEL repo is already configured.
-    stat: path={{ epel_repofile_path }}
+    stat: path="/etc/yum.repos.d/epel.repo"
     register: epel_repofile_result
  
    - name: 2.Install EPEL repo.
     yum:
-     name: "{{ epel_repo_url }}"
+     name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
      state: present
     register: result
     when: not epel_repofile_result.stat.exists
   
    - name: 3.Import EPEL GPG key.
      rpm_key:
-      key: "{{ epel_repo_gpg_key_url }}"
+      key: "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
       state: present
     when: not epel_repofile_result.stat.exists
    
    #enable firewall
+   handlers:
    - name: Enable firewalld
       service: name=firewalld state=started enabled=yes
-
+   tasks:
    - name: Set dmz as default policy
       command: firewall-cmd --set-default-zone=dmz
 
