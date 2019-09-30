@@ -3,23 +3,25 @@
 ##Eerste server configureren
 - hosts: pu001
   become: true
-  roles: bertvv.rh-base
+  roles: 
+    -bertvv.rh-base
+ # roles: bertvv.rh-base
   tasks:
 #Toevoegen van de epel repositories  
    - name: 1.Check if EPEL repo is already configured.
-    stat: path="/etc/yum.repos.d/epel.repo"
+    stat: path="{{ epel_repofile_path }}""
     register: epel_repofile_result
  
    - name: 2.Install EPEL repo.
     yum:
-     name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+     name: "{{ epel_repo_url }}"
      state: present
     register: result
     when: not epel_repofile_result.stat.exists
   
    - name: 3.Import EPEL GPG key.
      rpm_key:
-      key: "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+      key: "{{ epel_repo_gpg_key_url }}"
       state: present
     when: not epel_repofile_result.stat.exists
    
