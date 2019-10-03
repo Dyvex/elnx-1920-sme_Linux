@@ -3,7 +3,7 @@
 
 - name: restart journald
   service:
-    name: systemd-journald
+    name: systemd-journald.service
     state: restarted
 
 - name: restart firewalld
