@@ -7,7 +7,7 @@ rhbase_install_packages: ["bash-completion","bind-utils","git","nano","tree","vi
 rhbase_remove_packages: []
 rhbase_repo_exclude: []
 rhbase_repo_gpgcheck: false
-rhbase_repo_installonly_limit: 3
+rhbase_repo_installonly_limit: 2
 rhbase_repo_remove_dependencies: true
 rhbase_repo_exclude_from_update: []
 rhbase_repositories: []
@@ -35,7 +35,7 @@ rhbase_ssh_protocol_version: 2
 rhbase_ssh_rhostsrsaauthentication: 'no'
 
 # Services
-rhbase_start_services: ["firewalld","journald","yum-cron","sshd"]
+rhbase_start_services: ["firewalld","systemd-journald","yum-cron","sshd"]
 rhbase_stop_services: []
 
 # Security
