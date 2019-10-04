@@ -10,7 +10,7 @@ rhbase_repo_gpgcheck: false
 rhbase_repo_installonly_limit: 3
 rhbase_repo_remove_dependencies: true
 rhbase_repo_exclude_from_update: []
-rhbase_repositories: []
+rhbase_repositories: ["epel-release"]
 rhbase_update: false
 
 rhbase_repo_update_type: default
@@ -46,9 +46,9 @@ rhbase_selinux_state: enforcing
 rhbase_selinux_booleans: 'httpd_can_network_connect'
 
 # Users
-rhbase_users: 'dylano'
-rhbase_user_groups: 'wheel'
-rhbase_ssh_allow_groups: 'wheel'
+rhbase_users: dylano
+rhbase_user_groups: wheel
+rhbase_ssh_allow_groups: wheel
 
 # Yum-cron
 rhbase_automatic_updates: false

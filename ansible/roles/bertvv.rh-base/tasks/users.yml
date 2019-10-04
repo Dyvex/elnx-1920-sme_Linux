@@ -24,8 +24,7 @@
     name: "{{ item.name }}"
     state: present
     comment: "{{ item.comment|default('') }}"
-    shell: "{v
-    { item.shell|default('/bin/bash') }}"
+    shell: "{{ item.shell|default('/bin/bash') }}"
     groups: "{{ ','.join(item.groups) if item.groups is defined else '' }}"
     password: "{{ item.password|default('!!') }}"
   with_items: "{{ rhbase_users }}"
