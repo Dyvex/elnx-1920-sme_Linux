@@ -2,12 +2,12 @@
 ---
 
 # Package management
-rhbase_enable_repos: ["bash-completion","bind-utils","git","nano","tree","vim-enhanced","wget"]
+rhbase_enable_repos: epel
 rhbase_install_packages: ["bash-completion","bind-utils","git","nano","tree","vim-enhanced","wget"]
 rhbase_remove_packages: []
 rhbase_repo_exclude: []
 rhbase_repo_gpgcheck: false
-rhbase_repo_installonly_limit: 7
+rhbase_repo_installonly_limit: 3
 rhbase_repo_remove_dependencies: true
 rhbase_repo_exclude_from_update: []
 rhbase_repositories: []
@@ -23,7 +23,7 @@ rhbase_repo_email_to: root
 rhbase_repo_email_host: localhost
 
 # Configuration
-rhbase_override_firewalld_zones: false
+rhbase_override_firewalld_zones: false 
 rhbase_hosts_entry: false
 rhbase_motd: true
 rhbase_tz: :/etc/localtime
@@ -39,16 +39,16 @@ rhbase_start_services: ["firewalld","systemd-journald.service","yum-cron","sshd"
 rhbase_stop_services: []
 
 # Security
-rhbase_firewall_allow_services: [http,https,192.0.2.0/24]
-rhbase_firewall_allow_ports: []
-rhbase_firewall_interfaces: []
+rhbase_firewall_allow_services: [http,https]
+rhbase_firewall_allow_ports: ["8081/tcp","161-162/udp"]
+rhbase_firewall_interfaces: ["eth0","eth1"]
 rhbase_selinux_state: enforcing
-rhbase_selinux_booleans: []
+rhbase_selinux_booleans: 'httpd_can_network_connect'
 
 # Users
-rhbase_users: dylano
-rhbase_user_groups: sudo
-rhbase_ssh_allow_groups: sudo
+rhbase_users: 'dylano'
+rhbase_user_groups: 'wheel'
+rhbase_ssh_allow_groups: 'wheel'
 
 # Yum-cron
 rhbase_automatic_updates: false
