@@ -47,7 +47,8 @@ rhbase_selinux_booleans: 'httpd_can_network_connect'
 
 # Users
 rhbase_users: dylano
-rhbase_user_groups: wheel
+rhbase_user_groups: 
+  - wheel
 rhbase_ssh_allow_groups: wheel
 
 # Yum-cron
