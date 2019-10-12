@@ -27,6 +27,7 @@
     shell: "{{ item.shell|default('/bin/bash') }}"
     groups: "{{ ','.join(item.groups) if item.groups is defined else '' }}"
     password: "{{ item.password|default('!!') }}"
+    encrypted: "{ item.encrypted|default('no') }}"
   with_items: "{{ rhbase_users }}"
   tags:
     - rhbase

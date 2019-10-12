@@ -1,7 +1,7 @@
 #! /usr/bin/env bats
 #
 # Acceptance test script for srv010
-admin_user=bert
+admin_user='dylano'
 
 @test "SELinux should be set to 'Enforcing'" {
   [ 'Enforcing' = $(getenforce) ]
@@ -57,7 +57,7 @@ admin_user=bert
   local keyfile="/home/${admin_user}/.ssh/authorized_keys"
   [ -f "${keyfile}" ]
   [ -s "${keyfile}" ] # should be nonempty
-  [ $(stat --format="%a" "${keyfile}") = '600' ]
+  [ $(stat --format=v"%a" "${keyfile}") = '600' ]
 
 }
 

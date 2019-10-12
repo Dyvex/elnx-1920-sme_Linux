@@ -41,6 +41,8 @@ rhbase_ssh_ignorerhosts: 'yes'
 rhbase_ssh_permitemptypasswords: 'no'
 rhbase_ssh_protocol_version: 2
 rhbase_ssh_rhostsrsaauthentication: 'no'
+rhbase_ssh_user: 'dylano'
+rhbase_ssh_key: '/home/dylano/.ssh/authorized_keys/id_rsa'
 
 # Services
 rhbase_start_services: 
@@ -68,13 +70,16 @@ rhbase_selinux_booleans: 'httpd_can_network_connect'
 
 # Users
 rhbase_users: 
-  - { name: dylano,password: admin, groups: ["dylano", "sudo"] }
+  - { name: 'dylano',password: 'admin', groups: ["dylano", "sudo"], encrypted: yes }
 
 rhbase_user_groups: 
   - sudo
+
 rhbase_ssh_allow_groups: 
   - wheel
   - dylano 
+  - vagrant
+
 
 # Yum-cron
 rhbase_automatic_updates: false
