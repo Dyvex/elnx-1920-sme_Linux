@@ -18,7 +18,8 @@
   tags:
     - rhbase
     - users
-
+#12/10: encryptie vereist van passwoord:
+#password: "{{ my_password | password_hash('sha512') }}"
 - name: Users | Add users
   user:
     name: "{{ item.name }}"
@@ -26,17 +27,25 @@
     comment: "{{ item.comment|default('') }}"
     shell: "{{ item.shell|default('/bin/bash') }}"
     groups: "{{ ','.join(item.groups) if item.groups is defined else '' }}"
-    password: "{{ item.password|default('!!') }}"
-    encrypted: "{ item.encrypted|default('no') }}"
+    password: "{{ item.password | password_hash('sha512') }}"
   with_items: "{{ rhbase_users }}"
   tags:
     - rhbase
     - users
 
+#SSH keys genereren op host systeem:
+ # - name: Generate /etc/ssh/ RSA host key
+   # command : ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -C "" -N ""
+    #args:
+    # creates: /etc/ssh/ssh_host_rsa_key
+
+
+
 - name: "Users | Set up SSH key for user {{ rhbase_ssh_user|default('(not specified)') }}"
   authorized_key:
     user: "{{ rhbase_ssh_user }}"
-    key: "{{ rhbase_ssh_key }}"
+    key: "{{ lookup('file', '/home/dylano/.ssh/id_rsa.pub') }}"
+    state: present
   when: rhbase_ssh_user is defined
   tags:
     - rhbase
