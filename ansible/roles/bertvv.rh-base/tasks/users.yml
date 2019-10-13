@@ -1,7 +1,6 @@
 # roles/rhbase/tasks/users.yml
 #
 # Create groups and users on the system
----
 - name: Users | Process groups
   set_fact:
     rhbase_user_groups: "{{ rhbase_user_groups }} + {{ item.groups }}"
@@ -28,24 +27,16 @@
     shell: "{{ item.shell|default('/bin/bash') }}"
     groups: "{{ ','.join(item.groups) if item.groups is defined else '' }}"
     password: "{{ item.password | password_hash('sha512') }}"
+    createhome: yes
   with_items: "{{ rhbase_users }}"
   tags:
     - rhbase
     - users
 
-#SSH keys genereren op host systeem:
- # - name: Generate /etc/ssh/ RSA host key
-   # command : ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -C "" -N ""
-    #args:
-    # creates: /etc/ssh/ssh_host_rsa_key
-
-
-
 - name: "Users | Set up SSH key for user {{ rhbase_ssh_user|default('(not specified)') }}"
   authorized_key:
     user: "{{ rhbase_ssh_user }}"
-    key: "{{ lookup('file', '/home/dylano/.ssh/id_rsa.pub') }}"
-    state: present
+    key: "{{ lookup('file', '/home/vagrant/.ssh/authorized_keys') }}" 
   when: rhbase_ssh_user is defined
   tags:
     - rhbase

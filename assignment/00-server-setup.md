@@ -63,7 +63,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
     ✓ Custom /etc/motd should be installed
 
     10 tests, 0 failures
-    ```
+    
 
     Any tests for the LAMP stack may fail, but this is not part of the current assignment.
 
