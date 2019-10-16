@@ -2,3 +2,39 @@
 # Variables visible to all nodes
   
 ---
+
+#repos en packages installen
+rhbase_enable_repos: epel
+rhbase_install_packages: 
+  - bash-completion
+  - bind-utils
+  - git
+  - nano
+  - tree
+  - vim-enhanced
+  - wget
+
+
+# Users
+# MD5-encryptie van 'admin':'$1$RSIKi7Xv$1y3encWZm3v2dymqOTMkk.'
+rhbase_users: 
+  - name: dylano
+    password: '$1$RSIKi7Xv$1y3encWZm3v2dymqOTMkk. [...]'
+    groups: 
+      - dylano
+      - wheel
+rhbase_user_groups: 
+  - wheel
+
+rhbase_ssh_allow_groups: 
+  - wheel
+  - dylano 
+  - vagrant
+
+#ssh key
+rhbase_ssh_user: dylano
+rhbase_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6Dw7Bmd/BqIt41Zo7AdPfdLMUdQejK8atBHoQKNrR4bLiQ0SJThUApx4ZoT8I1djCYSZCbx7sw+WZDZqX3WKVc+1p70rFMpZDMG1LFaxQSGSlOtGYpiOCEDLrthBRZkDhlhGBgNGuhnDbO9a0rFlCghY7ECP/YQdZP/vNKVZzjXTRgKMVzEB3MyKonvdD0+WqE52JD9vCx/9PU5beHm9vcqn/Pr7NGQfuhmBrn5eTbRMhqpvcQCcQti5axXfeHalfgAKpP5ue0B+4fGZuMH0n1m/GrpH4BsBa5T5CBY318Am08kCAtchW+vliAqqbbCcP28exzTe6+Ew13AANwWLnl6krvIUJKv2m5SYQGwZCxCuNxrcQIq8tSZS6QjGv2ciUV310Sxsf2YHo8dO6dphHG/FQ375sITXTDUfotCAO+CHwQOcXEIlsRHU0chBlm/Q58e6wpmeKGNHvXciuvckrgBSx8O/gQ0Fp7nUUFF/G9OjuIptQVM3plljgxhM1y3c= Dylan@DESKTOP-MNGUEC8"
+
+#MOTD
+rhbase_motd: true
+rhbase_dynamic_motd: true

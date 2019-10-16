@@ -10,5 +10,6 @@
   -> Gelukt, ok = 51,failed = 0,zie screenshot 'uitvoering_vagrantup'
   
 #### 4. *'vagrant ssh pu001'* + test common.bats uitvoeren:
+  -> Alle testen gelukt behalve de ssh test
 
 #### 5. uitloggen en met dylano@192.0.2.10 inloggen via ssh:
