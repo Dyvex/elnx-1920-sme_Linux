@@ -3,8 +3,10 @@
   
 ---
 
-#repos en packages installen
+#repo's en packages installen
 rhbase_enable_repos: epel
+rhbase_repositories: epel-release
+
 rhbase_install_packages: 
   - bash-completion
   - bind-utils
@@ -16,10 +18,10 @@ rhbase_install_packages:
 
 
 # Users
-# MD5-encryptie van 'admin':'$1$RSIKi7Xv$1y3encWZm3v2dymqOTMkk.'
+# MD5-encryptie
 rhbase_users: 
   - name: dylano
-    password: '$1$RSIKi7Xv$1y3encWZm3v2dymqOTMkk. [...]'
+    password: '$1$mmHR2KDR$Bflb5h9Vh87PgO7atJhpZ0'
     groups: 
       - dylano
       - wheel

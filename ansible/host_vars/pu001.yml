@@ -2,8 +2,6 @@
 ---
 
 # Package management
-rhbase_repositories: epel-release
-
 rhbase_repo_update_type: default
 rhbase_repo_random_sleep: 360
 rhbase_repo_updates_download: true

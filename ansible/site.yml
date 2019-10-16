@@ -1,8 +1,11 @@
 # site.yml
-#deploy met: $ ansible-playbook -i hosts site.yml
-##Eerste server configureren
+
+## Webserver ##
 - hosts: pu001
   become: true
   gather_facts: yes
   roles: 
     - bertvv.rh-base    
+    #- bertvv.mariadb
+    #- bertvv.httpd
+    #- bertvv.wordpress
