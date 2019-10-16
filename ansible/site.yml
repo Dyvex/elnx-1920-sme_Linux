@@ -6,6 +6,6 @@
   gather_facts: yes
   roles: 
     - bertvv.rh-base    
-    #- bertvv.mariadb
-    #- bertvv.httpd
-    #- bertvv.wordpress
+    - bertvv.mariadb
+    - bertvv.httpd
+    - bertvv.wordpress
