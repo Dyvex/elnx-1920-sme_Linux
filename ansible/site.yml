@@ -1,4 +1,8 @@
 # site.yml
+##ERROR##
+# Probleem: fout bij plaatsen van de certificaten:
+#           "Destination directory /etc/pki/tls/private//vagrant/ansible/certificates does not exist"
+# Oplossing: pre taak die deze al naar de juiste folder zet
 
 ## Webserver ##
 - hosts: pu001

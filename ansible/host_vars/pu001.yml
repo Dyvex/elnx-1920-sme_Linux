@@ -58,5 +58,6 @@ wordpress_user: wp_user
 wordpress_password: CorkIgWac
 
 ## httpd configuratie ##
-httpd_ssl_certificate_file:  /vagrant/ansible/certificates/ca.crt
-httpd_ssl_certificate_key_file: /vagrant/ansible/certificates/ca.key
+httpd_ssl_certificate_file: 'ca.crt'
+httpd_ssl_certificate_key_file: 'ca.key'
+
