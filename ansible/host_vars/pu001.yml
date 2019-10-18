@@ -27,8 +27,10 @@ rhbase_firewall_allow_services:
 
 rhbase_firewall_allow_ports: 
   - 22/tcp #port 22 voor ssh
-  - 8081/tcp
-  - 161-162/udp
+  - 25/tcp
+  - 80/tcp
+  #- 8081/tcp
+  #- 161-162/udp
 
 rhbase_firewall_interfaces: 
   - eth0
@@ -49,14 +51,13 @@ mariadb_users:
     host: '%'
   - name: wp_user
     password: CorkIgWac
-    priv: 'wp_db.*:ALL'
-    host: '192.0.2.%'
+    priv: '*.*:ALL'
+    host: '192.0.2.10'
 
 ## Wordpress configuratie ##
 wordpress_database: wp_db
 wordpress_user: wp_user
 wordpress_password: CorkIgWac
-wordpress_database_host: '192.0.2.10'
 
 ## httpd configuratie ##
 httpd_ssl_certificate_file: 'ca.crt'
