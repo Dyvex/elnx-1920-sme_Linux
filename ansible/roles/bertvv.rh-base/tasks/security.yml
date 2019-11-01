@@ -2,7 +2,7 @@
 #
 # Basic security settings
 ---
-- name: Security | Make sure SELinux is Enforcing
+- name: Security | Make sure SELinux has the desired state ({{ rhbase_selinux_state }})
   selinux:
     policy: targeted
     state: "{{ rhbase_selinux_state }}"
@@ -13,9 +13,10 @@
 - name: Security | Enable SELinux booleans
   seboolean:
     name: "{{ item }}"
-    state: yes
-    persistent: yes
+    state: true
+    persistent: true
   with_items: "{{ rhbase_selinux_booleans }}"
+  when: rhbase_selinux_state == 'enforcing' or rhbase_selinux_state == 'permissive'
   tags:
     - rhbase
     - security
@@ -24,7 +25,7 @@
   service:
     name: firewalld
     state: started
-    enabled: yes
+    enabled: true
   tags:
     - rhbase
     - security

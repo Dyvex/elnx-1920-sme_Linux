@@ -42,6 +42,8 @@ wordpress_password=CorkIgWac
   [ -n "$(sestatus) | grep 'enforcing'" ]
 }
 
+# EIGEN VERANDERING DOOR DYLANO
+# deze test faalde omdat er geen sudo rechten waren!
 @test 'Web traffic should pass through the firewall' {
   firewall-cmd --list-all | grep 'services.*http\b'
   firewall-cmd --list-all | grep 'services.*https\b'

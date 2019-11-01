@@ -3,13 +3,24 @@
 # Probleem: fout bij plaatsen van de certificaten:
 #           "Destination directory /etc/pki/tls/private//vagrant/ansible/certificates does not exist"
 # Oplossing: pre taak die deze al naar de juiste folder zet
-
+---
 ## Webserver ##
 - hosts: pu001
   become: true
-  gather_facts: yes
   roles: 
-    - bertvv.rh-base    
+    - bertvv.rh-base
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
+  pre_tasks:
+    - name: Kopieren van key voor https
+      copy:
+        src: 'files/ca.key'
+        dest: '/etc/pki/tls/private/ca.key'
+    - name: Kopieren van certificaat voor https
+      copy:
+        src: 'files/ca.crt'
+        dest: '/etc/pki/tls/certs/ca.crt'
+
+#Dit is nodig want bij elke definiering wordt de .key en .crt anders niet opgehaald.        
+#Inspiratie: https://symfonycasts.com/screencast/ansible/pre-tasks-facts

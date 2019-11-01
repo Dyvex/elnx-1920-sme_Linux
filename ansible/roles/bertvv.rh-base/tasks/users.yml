@@ -2,7 +2,6 @@
 #
 # Create groups and users on the system
 ---
-
 - name: Users | Process groups
   set_fact:
     rhbase_user_groups: "{{ rhbase_user_groups }} + {{ item.groups|default([]) }}"

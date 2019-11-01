@@ -1,6 +1,9 @@
 # group_vars/all.yml
 # Variables visible to all nodes
-  
+#ERROR: Host_vars word niet afgelopen voor variabelenµ
+#gevonden door te kijken of deze items werden toegevoegd bij de provision 
+#en bij uitvoeren commando firewall-cmd --list-all
+#kreeg ik bevestiging dat deze niet toegevoegd werden
 ---
 
 #repo's en packages installen
@@ -16,8 +19,7 @@ rhbase_install_packages:
   - vim-enhanced
   - wget
 
-
-# Users
+# Usersvagr
 # MD5-encryptie
 rhbase_users: 
   - name: dylano
