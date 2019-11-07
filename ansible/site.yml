@@ -24,3 +24,10 @@
 
 #Dit is nodig want bij elke definiering wordt de .key en .crt anders niet opgehaald.        
 #Inspiratie: https://symfonycasts.com/screencast/ansible/pre-tasks-facts
+
+- hosts: pr001
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.bind
+    
