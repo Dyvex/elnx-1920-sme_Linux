@@ -7,12 +7,12 @@
 ---
 
 #repo's en packages installen
-rhbase_enable_repos: epel
-rhbase_repositories: epel-release
+rhbase_repositories: 
+  - epel-release
 
 rhbase_install_packages: 
-  - bash-completion
-  - bind-utils
+  - bash-completion, bash-completion-extras
+  - bind, bind-utils
   - git
   - nano
   - tree
@@ -27,17 +27,12 @@ rhbase_users:
     groups: 
       - dylano
       - wheel
-rhbase_user_groups: 
-  - wheel
-
-rhbase_ssh_allow_groups: 
-  - wheel
-  - dylano 
-  - vagrant
+      - bind
 
 #ssh key
 rhbase_ssh_user: dylano
-rhbase_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDb31E3t+Sk3jqn+rEF5PMlLsKu64Gvcuyx/K/JEVYz2YmCLRoGJUrEKSKVxPtPsccPBM4p4g8UIKF45zzCeYEBTVa0oiOuvP6eGS6TlpwFWLxvNI/RKNX1/WDUHkUy++K/h3gn+A6Cndpq3E9aXUTrpfWsUiPSfFC9GeNSRNoYVBM5eeY0rAfDGH56n3corGIS59SKAVJwHiv0xsDcv+YhSwhogI9j6HEUfmf+INDAsSkShNs6mGEWeYe6vRayZnRh4PV4MqFyjt039/VczlbU48DIe3RCZhE5oXJ6HcdbMDCs/0KaC3Fsaiiie//ALfbGiWaPgQJg9WLwcc/cYDml4A9Arq7f2tzSHy+HdUhRv7OccJP63KRsaTjfUT5WOfLFAy33Bvp/no8Z0leslzeJpSYaVpaPH/jRy05i0okhl/PxIBRMFIPs/aAiksJvyTIu94GVVK86IWFaiukbeLbZjJjhVCsExhVCP84ebNk+UgHDc6rvsExM8MVuXDn5XI6/u5lp+I7Mr2Tkxo9lsCWTLBz4V5UPrWEVRlDgX0exhGWVlVRqTLsJARKk37LEBxSDzYi1kobwtliSmNBbK2sO5kryd6O36QHb0FMmKOmzgaNlDeMuCdDFq1MVvxff3n6LcMx7vh/RDoc+N4U4kVY45+nKzOBFMue9XsNQSV8Fjw== dylano.steenhuyzen@hotmail.com"
+rhbase_ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDJhSZ4tTI9SENm6cmvRQ/K+uJGabjJyFrHpNWP9wjsmcL2W5SQD0XCI5YXlm/a0EqeOi2N36GtMU4KOIaiZzhIwn3sFdnDarHqU5dbE19Q3LPjyOSqOlDF8syo5tLzq3Q1bgahsuxqtoAzQqxCKquF+WZv/84H++e8AqIeW4WDKBpb2LOtTeKhDcFHokfxQM9jKFOIiEDi5+7TI8Cm2mt44cqnWXoz/fn3zJ5j/ytqr+xP8eCFFLEc9DlsmnXeUj/Oy4WeeH9HtobPtqPduLerkfdxyxhq18xLj7NpF4v8Pf9FxrzgbXcto25PMSXvXWWjaf7lze2uf6VQ3UD7FTyUB1U8lqEmzpm7MFuhZbQdSsjsUxGO5cEZnEEiPFIM+v/pqYU5yivQ2gy3eHKl946Ue+flqqCzVlo9moDdtmFokzpzfztuRun+N7eZ86F9+kI4qWEzCnDOMyHhzEBJLLjsI7jd1NHrFVpqsXlLxExHY2QT04fcjyQhF4HCd/EBfiNWVDQ8zfSbZIzTMXpeZnp5lq8Tv95T4RzventbX7av7leUCWuMAMFJPW7lE/z6u7lHlHTb2pZvJjWZb4A9JRr9NYdQq2l9Z1xK3NrtMJsvr0BHtcGwTReKHZn7w76ugQw1wK2Oxg0W/qPWl42KrJ3gVk+mku1mNt97AtWum1lybw== Dylan@DESKTOP-MNGUEC8
+
 #nieuwe SSH laten generen want 'dylano' moet naar 'Dylan verander worden'
 #MOTD
 rhbase_motd: true

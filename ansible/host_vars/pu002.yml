@@ -1,0 +1,38 @@
+# host_vars/pu001.yml
+---
+#rh-base configuratie
+rhbase_start_services: 
+  - firewalld
+  - systemd-journald.service
+  - sshd
+
+rhbase_selinux_state: enforcing
+rhbase_selinux_booleans: 
+  - httpd_can_network_connect
+
+rhbase_firewall_allow_services:
+  - imap
+  - imaps
+  - pop3
+  - pop3s
+  - smtp
+  - smtps
+  - smtp-submission
+
+rhbase_firewall_allow_ports:
+  - 25/tcp #SMTP port
+  - 587/tcp #SMTP port voor abuse port 25
+  - 110/tcp #POP port
+  - 995/tcp #POPS port
+  - 143/tcp #IMAP port
+  - 993/tcp #IMAPs port
+
+rhbase_users:
+  - name: johndoe
+    password: '$1$mmHR2KDR$Bflb5h9Vh87PgO7atJhpZ0'
+    shell: /sbin/nologin
+
+rhbase_hosts_entry: true
+
+#mail configuratie
+postfix_ldap: true

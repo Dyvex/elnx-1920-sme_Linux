@@ -25,10 +25,19 @@
 #
 # [1] http://docs.vagrantup.com/v2/synced-folders/basic_usage.html
 ---
-
+#web-server
 - name: pu001
   ip: 192.0.2.10
-  
+  netmask: 255.255.255.0
+#mail-server
+- name: pu002
+  ip: 192.0.2.20
+  netmask: 255.255.255.0
+#dns-server (master)
 - name: pr001
   ip: 172.16.192.1
+  netmask: 255.255.0.0
+#dns-server (slave)
+- name: pr002
+  ip: 172.16.192.2
   netmask: 255.255.0.0
