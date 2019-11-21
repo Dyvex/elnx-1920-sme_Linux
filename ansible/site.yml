@@ -4,6 +4,11 @@
 #           "Destination directory /etc/pki/tls/private//vagrant/ansible/certificates does not exist"
 # Oplossing: pre taak die deze al naar de juiste folder zet
 ---
+
+- hosts: all
+  become: true
+  roles:
+    - bertvv.rh-base
 ## Webserver ##
 - hosts: pu001
   become: true
