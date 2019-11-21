@@ -57,7 +57,7 @@ admin_user='dylano'
   local keyfile="/home/${admin_user}/.ssh/authorized_keys"
   [ -f "${keyfile}" ]
   [ -s "${keyfile}" ] # should be nonempty
-  [ $(stat --format=v"%a" "${keyfile}") = 'v600' ]
+  [ $(stat --format="%a" "${keyfile}") = '600' ]
 
 }
 

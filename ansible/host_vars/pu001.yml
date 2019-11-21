@@ -24,7 +24,6 @@ wordpress_database_host: '192.0.2.10'
 httpd_ssl_certificate_file: 'ca.crt'
 httpd_ssl_certificate_key_file: 'ca.key'
 
-
 #OP TE LOSSEN ERROR: geen connectie met 192.0.2.10/wordpress
 #Dit KAN komen doordat het certificaat de naam 'Dylano' heeft en niet '192.0.2.10'
 ##   (mogelijke)   OPLOSSING     ##

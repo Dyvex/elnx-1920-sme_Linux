@@ -89,7 +89,7 @@ wordpress_password=CorkIgWac
 }
 
 @test "The Wordpress install page should be visible under http://${sut}/wordpress/" {
-  [ -n "$(curl --silent --location http://${sut}/wordpress/ | grep '<title>WordPress')" ]
+  [ -n "$(curl --silent --location https://${sut}/wordpress/ | grep '<title>WordPress')" ]
 }
 
 @test 'MariaDB should not have a test database' {
