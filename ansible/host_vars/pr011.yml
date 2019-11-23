@@ -1,0 +1,8 @@
+# host_vars/pr011.yml
+---
+#rh-base configuration
+rhbase_firewall_allow_services:
+  - samba
+  - ftp
+#fileshare configuration  
+samba_workgroup: 'AVALON'

@@ -11,7 +11,7 @@
 #
 # Leave the file empty if you do not want to define groups.
 ---
-web:
-  - pu001
+#web:
+#  - pu001
 
 #mogelijke error!

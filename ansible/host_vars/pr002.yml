@@ -6,17 +6,19 @@ bind_zone_domains:
     networks:
       - "172.16"
       - "192.0.2"
-      - "10"
-
+    name_servers:
+      - pr001
+      - pr002
+bind_zone_master_server_ip: 172.16.192.1
 bind_forwards:
   - 8.8.8.8
   - 8.8.4.4
-
-bind_zone_master_server_ip: 172.16.192.1
-
 bind_listen_ipv4:
   - any
 bind_allow_query:
   - any
 rhbase_firewall_allow_services:
   - dns
+
+#ERROR: De synchronisatie tussen de master en slave werkte niet,hierdoor faalde veel testen
+#Mogelijke oplossing: de 'allow-transfer' in de config file komt er niet in,deze moet men definieren met acls

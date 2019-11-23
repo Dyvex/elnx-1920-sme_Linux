@@ -18,21 +18,28 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
- 
+## mailserver ## 
 - hosts: pu002
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.mailserver
-
+## dns_masterserver ##
 - hosts: pr001
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.bind
-
+## dns_slaveserver ##
 - hosts: pr002
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.bind
+## fileshareserver ##
+- hosts: pr011
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.samba
+  

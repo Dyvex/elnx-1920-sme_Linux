@@ -19,7 +19,7 @@ mariadb_users:
 wordpress_database: wp_db
 wordpress_user: wp_user
 wordpress_password: CorkIgWac
-wordpress_database_host: '192.0.2.10'
+wordpress_database_host: 192.0.2.10
 #httpd configuratie
 httpd_ssl_certificate_file: 'ca.crt'
 httpd_ssl_certificate_key_file: 'ca.key'

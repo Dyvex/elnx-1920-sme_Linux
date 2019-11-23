@@ -1,15 +1,6 @@
 # host_vars/pu001.yml
 ---
 #rh-base configuratie
-rhbase_start_services: 
-  - firewalld
-  - systemd-journald.service
-  - sshd
-
-rhbase_selinux_state: enforcing
-rhbase_selinux_booleans: 
-  - httpd_can_network_connect
-
 rhbase_firewall_allow_services:
   - imap
   - imaps
