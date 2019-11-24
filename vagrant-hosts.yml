@@ -45,4 +45,8 @@
 - name: pr011
   ip: 172.16.192.11
   netmask: 255.255.0.0
+#dhcp-server
+- name: pr003
+  ip: 172.16.192.3
+  netmask: 255.255.0.0
   

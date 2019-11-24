@@ -42,4 +42,11 @@
   roles:
     - bertvv.rh-base
     - bertvv.samba
+    - bertvv.vsftpd
+## dhcpserver ##
+- hosts: pr003
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.dhcp
   
