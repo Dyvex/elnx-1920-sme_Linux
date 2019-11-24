@@ -6,3 +6,61 @@ rhbase_firewall_allow_services:
   - ftp
 #fileshare configuration  
 samba_workgroup: 'AVALON'
+samba_server_string: 'De fileserver van Dylano'
+samba_load_homes: true
+samba_create_varwww_symlinks: true
+samba_shares: 
+  - name: management
+    comment: 'Management groep'
+    group: management
+    valid_users: +management
+    write_list: +management
+    directory_mode: 770
+  - name: technical
+    comment: 'Technische groep'
+    group:  technical
+    write_list: +technical
+  - name: sales
+    comment: 'sales groep'
+    group: sales
+    valid_users: +management, +sales
+    write_list: +sales
+    directory_mode: 770
+  - name: it
+    comment: 'De IT groep'
+    group: it
+    valid_users: +management, +it
+    write_list: +it
+    directory_mode: 770
+  - name: public
+    comment: 'Groep voor elke gebruiker'
+    group: public
+    write_list: +public
+samba_users: 
+  - name: stevenh
+    password: stevenh
+  - name: stevenv
+    password: stevenv
+  - name: leend
+    password: leend
+  - name: svena
+    password: svena
+  - name: nehirb
+    password: nehirb
+  - name: alexanderd
+    password: alexanderd
+  - name: krisv
+    password: krisv
+  - name: benoitp
+    password: benoitp
+  - name: anc
+    password: anc
+  - name: elenaa
+    password: elenaa
+  - name: evyt
+    password: evyt
+  - name: christophev
+    password: christophev
+  - name: stefaanv
+    password: stefaanv
+

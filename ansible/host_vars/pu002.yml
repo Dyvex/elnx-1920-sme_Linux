@@ -1,5 +1,6 @@
-# host_vars/pu001.yml
+# host_vars/pu00.yml
 ---
+
 #rh-base configuratie
 rhbase_firewall_allow_services:
   - imap
@@ -19,11 +20,14 @@ rhbase_firewall_allow_ports:
   - 993/tcp #IMAPs port
 
 rhbase_users:
-  - name: johndoe
+  - name: dylano
     password: '$1$mmHR2KDR$Bflb5h9Vh87PgO7atJhpZ0'
     shell: /sbin/nologin
 
 rhbase_hosts_entry: true
 
 #mail configuratie
-postfix_ldap: true
+#verdere uitwerking na afwerking ftp server
+#dan moeten de volgende variabelen geinitialiseerd worden:
+#postfix_ldap: true dan MOET men deze ook definieren:
+#ldap_fqdn1,ldap_Ou,ldap_dcname,ldap_domainname,ldap_root_domain
