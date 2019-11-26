@@ -78,6 +78,6 @@ vsftpd_options:
     value: /var/log/vsftp_xfer.log
 vsftpd_extra_permissions:
   - folder: "/srv/shares/public"
-    entity: "technical"
+    entity: "public"
     etype: "group"
-    permissions: r-w
+    permissions: "r-w"

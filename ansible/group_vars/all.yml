@@ -32,6 +32,7 @@ rhbase_users:
     password: '$1$mmHR2KDR$Bflb5h9Vh87PgO7atJhpZ0'
     groups: 
       - wheel
+      - bind
       - it
       - public
   - name: stevenh
