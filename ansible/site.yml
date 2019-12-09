@@ -19,12 +19,6 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
-## mailserver ## 
-#- hosts: pu002
-#  become: true
-#  roles:
-#    - bertvv.rh-base
-#    - bertvv.mailserver
 ## dns_masterserver ##
 - hosts: pr001
   become: true
@@ -44,10 +38,10 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
+  
 ## dhcpserver ##
 - hosts: pr003
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.dhcp
-  

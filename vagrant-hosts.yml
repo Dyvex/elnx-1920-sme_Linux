@@ -29,17 +29,24 @@
 - name: pu001
   ip: 192.0.2.10
   netmask: 255.255.255.0
+  mac: '08:00:27:64:5C:08'
 #dns-server (master)
 - name: pr001
-  mac: '08:00:27:64:5B:86'
+  ip: 172.16.192.1
+  netmask: 255.255.0.0
+  mac: '08:00:27:64:5B:03'
 #dns-server (slave)
 - name: pr002
-  mac: '08:00:27:64:5B:45'
-#ftp-server
-- name: pr011
-  mac: '08:00:27:64:5B:98'
-#dhcp-server
+  ip: 172.16.192.2
+  netmask: 255.255.0.0
+  mac: '08:00:27:64:5B:04'
+  #dhcp-server
 - name: pr003
   ip: 172.16.192.3
   netmask: 255.255.0.0
-  
+  mac: '08:00:27:64:5B:06'
+#ftp-server
+- name: pr011
+  ip: 172.16.192.11
+  netmask: 255.255.0.0
+  mac: '08:00:27:64:5B:11'

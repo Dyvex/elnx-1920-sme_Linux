@@ -38,28 +38,24 @@ rhbase_users:
   - name: stevenh
     password: '$1$kqetj25/$dk/3GL.vEu8AtqvlkhfXD1'
     comment: 'CEO'
-    shell: /sbin/nologin
     groups:
       - management
       - public
   - name: stevenv
     password: '$1$3v/z9L0L$mjOJNWdfXnuR91W2wBa.U1'
     comment: 'Software engineer'
-    shell: /sbin/nologin
     groups:
       - technical
       - public
   - name: leend
     password: '$1$u4fXONWb$upb83rm3Xl3CKX73RTNp20'
     comment: 'Software engineer'
-    shell: /sbin/nologin
     groups:
       - technical
       - public
   - name: svena
     password: '$1$6VfrCZKT$ww4qL0xyrHorpvYXT0OoR.'
     comment: 'Account manager'
-    shell: /sbin/nologin
     groups:
       - sales
       - public
@@ -72,42 +68,36 @@ rhbase_users:
   - name: alexanderd
     password: '$1$GWIo2SSI$U/xqkD.o1qFjjPrBXggwW1'
     comment: 'Software engineer'
-    shell: /sbin/nologin
     groups:
       - technical
       - public
   - name: krisv
     password: '$1$yzdYRBvK$P3u3ovWbl/fU7Jrnmg1a1/'
     comment: 'CFO'
-    shell: /sbin/nologin
     groups:
       - management
       - public
   - name: benoitp
     password: '$1$sPBRDQqM$EmVvb3B2a9y8RF.ZiXWsO1'
     comment: 'Account manager'
-    shell: /sbin/nologin
     groups:
       - sales
       - public
   - name: anc
     password: '$1$.5VPOvIW$3aBQGhzlbUte7LkdPRD27/'
     comment: 'Graphical designer'
-    shell: /sbin/nologin
     groups:
       - technical
       - public
   - name: elenaa
     password: '$1$0pJqFYGV$ODh.332PUi4ipey5bIOpm1'
     comment: 'Office manager'
-    shell: /sbin/nologin
     groups:
       - management
       - public
   - name: evyt
     password: '$1$X.i63mrt$rviu2Ot4C7zVEfmtfcRf..'
     comment: 'Technical writer'
-    shell: /sbin/nologin
     groups:
       - technical
       - public
@@ -120,7 +110,6 @@ rhbase_users:
   - name: stefaanv
     password: '$1$8EZnF76B$KmcDOmjMBT/fyPpk4Qg/0/'
     comment: 'Support specialist'
-    shell: /sbin/nologin
     groups:
       - technical
       - public

@@ -9,6 +9,7 @@ samba_netbios_name: FILES
 samba_workgroup: 'AVALON'
 samba_server_string: 'De fileserver van Dylano'
 samba_load_homes: true
+samba_shares_root: '/srv/shares/'
 samba_create_varwww_symlinks: true
 samba_users: 
   - name: dylano
@@ -70,14 +71,42 @@ samba_shares:
 #vsftpd configuration
 vsftpd_local_enable: true
 vsftpd_anonymous_enable: false
-
-vsftpd_options:
-  - key: xferlog_enable
-    value: 'YES'
-  - key: xferlog_file
-    value: /var/log/vsftp_xfer.log
+vsftpd_local_root: /srv/shares
 vsftpd_extra_permissions:
+#public
   - folder: "/srv/shares/public"
     entity: "public"
     etype: "group"
-    permissions: "r-w"
+    permissions: "rwx"
+#management
+  - folder: "/srv/shares/management"
+    entity: "management"
+    etype: "group"
+    permissions: "rwx"
+#sales
+  - folder: "/srv/shares/sales"
+    entity: "sales"
+    etype: "group"
+    permissions: "rwx"
+  - folder: "/srv/shares/sales"
+    entity: "management"
+    etype: "group"
+    permissions: "r-x"
+#it
+  - folder: "/srv/shares/it"
+    entity: "it"
+    etype: "group"
+    permissions: "rwx"
+  - folder: "/srv/shares/it"
+    entity: "management"
+    etype: "group"
+    permissions: "r-x"
+#technical
+  - folder: "/srv/shares/technical"
+    entity: "technical"
+    etype: "group"
+    permissions: "rwx"
+  - folder: "/srv/shares/technical"
+    entity: "public"
+    etype: "group"
+    permissions: "r-x"

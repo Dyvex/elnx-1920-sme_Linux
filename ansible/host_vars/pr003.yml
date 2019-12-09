@@ -8,7 +8,7 @@ rhbase_firewall_allow_services:
 dhcp_global_domain_name_servers:
   - 172.16.192.1 #dns1
   - 172.16.192.2 #dns2
-  - 10.0.2.3 #eth0
+
 dhcp_global_default_lease_time: 43200
 dhcp_global_max_lease_time: 43200
 dhcp_global_domain_name: avalon.lan
@@ -26,20 +26,12 @@ dhcp_subnets:
       - default_lease_time: 14400
         max_lease_time: 14400 #4 uur
         range_begin: 172.16.0.2
-        range_end: 172.16.127.254
-      - range_begin: 172.16.128.1
-        range_end: 172.16.191.254       
+        range_end: 172.16.127.254                 
       - range_begin: 172.16.192.1
         range_end: 172.16.255.253     
 dhcp_hosts:
-  - name: pr001
-    mac: '08:00:27:64:5B:86'
-    ip: 172.16.192.1
-  - name: pr002
-    mac: '08:00:27:64:5B:45'
-    ip: 172.16.192.2
-  - name: pr011
-    mac: '08:00:27:64:5B:98'
-    ip: 172.16.192.11
+  #- name: pr011
+  #  mac: '08:00:27:64:5B:11'
+  #  ip: 172.16.192.11
 
 
