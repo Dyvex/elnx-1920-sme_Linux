@@ -73,17 +73,14 @@ vsftpd_local_enable: true
 vsftpd_anonymous_enable: false
 vsftpd_local_root: /srv/shares
 vsftpd_extra_permissions:
-#public
   - folder: "/srv/shares/public"
     entity: "public"
     etype: "group"
     permissions: "rwx"
-#management
   - folder: "/srv/shares/management"
     entity: "management"
     etype: "group"
     permissions: "rwx"
-#sales
   - folder: "/srv/shares/sales"
     entity: "sales"
     etype: "group"
@@ -92,7 +89,6 @@ vsftpd_extra_permissions:
     entity: "management"
     etype: "group"
     permissions: "r-x"
-#it
   - folder: "/srv/shares/it"
     entity: "it"
     etype: "group"
@@ -101,7 +97,6 @@ vsftpd_extra_permissions:
     entity: "management"
     etype: "group"
     permissions: "r-x"
-#technical
   - folder: "/srv/shares/technical"
     entity: "technical"
     etype: "group"
