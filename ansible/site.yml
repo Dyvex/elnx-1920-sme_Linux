@@ -10,8 +10,8 @@
   become: true
   roles:
     - bertvv.rh-base
+
 ## Webserver ## 
-# Eventueel sepolicy role toevoegen moest opeens wordpress niet meer werken
 - hosts: pu001
   become: true
   roles: 
@@ -19,18 +19,28 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
+
 ## dns_masterserver ##
 - hosts: pr001
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.bind
+
 ## dns_slaveserver ##
 - hosts: pr002
   become: true
   roles:
     - bertvv.rh-base
     - bertvv.bind
+
+## dhcpserver ##
+- hosts: pr003
+  become: true
+  roles:
+    - bertvv.rh-base
+    - bertvv.dhcp
+
 ## fileshareserver ##
 - hosts: pr011
   become: true
@@ -39,9 +49,3 @@
     - bertvv.samba
     - bertvv.vsftpd
   
-## dhcpserver ##
-- hosts: pr003
-  become: true
-  roles:
-    - bertvv.rh-base
-    - bertvv.dhcp
