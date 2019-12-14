@@ -28,3 +28,8 @@ dhcp_subnets:
       - range_begin: 172.16.128.1
         range_end: 172.16.191.254
         deny: 'members of "vbox"'
+#uit-commenten indien aanmaken manueel VBox voor dhcp te testen (op werkstation)
+#dhcp_hosts:
+  #- name: testbox
+    #mac: '08:00:27:B4:64:01'
+    #ip: 172.16.0.10

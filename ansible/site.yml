@@ -1,8 +1,4 @@
 # site.yml
-##ERROR##
-# Probleem: fout bij plaatsen van de certificaten:
-#           "Destination directory /etc/pki/tls/private//vagrant/ansible/certificates does not exist"
-# Oplossing: pre taak die deze al naar de juiste folder zet
 ---
 #oplossing voor SSH error: 
 #de 'all' host initialiseren laat me ssh dylano@192.0.2.10 doen
