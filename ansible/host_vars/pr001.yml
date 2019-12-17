@@ -57,9 +57,9 @@ bind_zone_domains:
     
 bind_zone_master_server_ip: 172.16.192.1
 bind_zone_dir: /var/named
-bind_forwards:
-  - 8.8.8.8
-  - 8.8.4.4
+bind_forwarders:
+  - '8.8.8.8'
+  - '8.8.4.4'
 #acl aanmaken 
 bind_acls:
   - name: acl1

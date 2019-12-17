@@ -6,7 +6,6 @@
   become: true
   roles:
     - bertvv.rh-base
-
 ## Webserver ## 
 - hosts: pu001
   become: true

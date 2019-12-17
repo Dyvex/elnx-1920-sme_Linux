@@ -8,6 +8,7 @@
     - https://computer.howstuffworks.com/dns.htm
     - https://www.golinuxcloud.com/configure-master-slave-dns-server-centos-7/
     - https://www.tecmint.com/setup-master-slave-dns-server-in-centos/
+    - http://www.microhowto.info/howto/configure_bind_as_a_slave_dns_server.html
 
 * Eigen troubleshoot-guide van de demo in entreprise Linux en de slides van hiervan:
     - https://hogenttin.github.io/elnx-syllabus/bind/#/title-slide
