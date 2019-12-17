@@ -7,6 +7,7 @@
   - **Gebrek aan zichtbaarheid in linux systemen**
   - **Gebrek aan onderzoek**,dit komt natuurlijk weer door het feit dat er veel meer mensen windows-gestuurde systeem hebben en als gevolg ook niet voldoende weten over de gevaren die zich kunnen bevinden in dit systeem
   - **Gebrek aan technieken**
+  - **Besluit:** Indien een bedrijf dus zijn data op een cloud gaat hosten is kans groot dat deze linux server(s) gaat gebruiken en aangezien er onvoldoende research hierover is we eigenlijk niet weten welke gevaren er zijn en hoe we deze kunnen tegenhouden.
   
 ### rkhunter
 
