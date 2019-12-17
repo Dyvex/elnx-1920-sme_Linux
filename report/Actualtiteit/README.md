@@ -1,6 +1,13 @@
 # Linux security auditing tools en monitoring
 
 ## Literatuurstudie
+
+### Waarom Linux beveiligen?
+  - **Er is een gebrek aan Linux protection systems**,dit komt omdat alle beveiligingsoplossing gebruikt worden om Windows-gestuurde systemen te beveiligen aangezien het overgrote deel van computergebruikers windows hebben.Het probleem dat je dan krijgt is dat de integratie van deze windowsbeveiligingstools naar Linux niet zo evident is en dus minder effectief zullen zijn 
+  - **Gebrek aan zichtbaarheid in linux systemen**
+  - **Gebrek aan onderzoek**,dit komt natuurlijk weer door het feit dat er veel meer mensen windows-gestuurde systeem hebben en als gevolg ook niet voldoende weten over de gevaren die zich kunnen bevinden in dit systeem
+  - **Gebrek aan technieken**
+  
 ### rkhunter
 
 ### chkrootkit
