@@ -19,7 +19,7 @@
           update info                   : Show update details
 
 
-    Options:
+      Options:
 
       Alternative system audit modes
       --forensics                       : Perform forensics on a running or mounted system
