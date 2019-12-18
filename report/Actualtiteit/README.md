@@ -13,11 +13,10 @@
   - Dit is een unix-based tool die gaat scannen voor rootkits ( collectie van software die als kwaadaardig wordt beschouwd), 'backdoors' en     mogelijke lokale exploits zoals onder andere Email injecties,buffer overflows,...
     rkhunter zal dit doen doormiddel van de SHA-1 hashes van belangrijke bestanden te vergelijken met de gekende files in de online   databank.
 ### chkrootkit
-    
-### Linux Malware Detect
 
 ### Lynis
-
+  - Ook gemaakt door de oprichter van 'rkhunter' (en enkele anderen).
+  Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
 ### LSAT
 
 ### Tiger
@@ -28,3 +27,9 @@ Ik heb gekozen voor deze technologie te implementeren omwille dat ik de beveilin
 Mensen en bedrijven willen zich veilig voelen in de digitale wereld,ze willen niet dat hun privacy geschonden wordt en hun gegevens worden vervalst of gestolen en in de hedendaagse maatschappij krijgen we alsmaar meer te maken met 'cyber-attacks'.
 Dit is medemogelijk gemaakt door de sterke evolutie in technolgie die we maken en mensen meer en meer hun gegevens gaan toevertrouwen aan de digitale wereld.
 Ik wil dan ook zorgen door deze tools te implementeren er zo weinig mogelijk kwetsbaarheden in mijn servers zullen zitten.
+
+## Resources
+  - https://www.eukhost.com/kb/what-is-rootkit-hunter/
+  - https://en.wikipedia.org/wiki/Rkhunter
+  - https://en.wikipedia.org/wiki/Lynis
+  
