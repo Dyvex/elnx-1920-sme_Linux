@@ -9,12 +9,12 @@
   4. **Gebrek aan technieken**
 * **Besluit:** Indien een bedrijf dus zijn data op een cloud gaat hosten is kans groot dat deze linux server(s) gaat gebruiken en aangezien er onvoldoende research hierover is we eigenlijk niet weten welke gevaren er zijn en hoe we deze kunnen tegenhouden.
   
-### [rkhunter] (https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/rkhunter.md)
+### [rkhunter](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/rkhunter.md)
   - Dit is een unix-based tool die gaat scannen voor rootkits ( collectie van software die als kwaadaardig wordt beschouwd), 'backdoors' en     mogelijke lokale exploits zoals onder andere Email injecties,buffer overflows,...
     rkhunter zal dit doen doormiddel van de SHA-1 hashes van belangrijke bestanden te vergelijken met de gekende files in de online   databank.
 ### chkrootkit
 
-### [Lynis] (https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/Lynis.md)
+### [Lynis](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/Lynis.md)
   - Ook gemaakt door de oprichter van 'rkhunter' (en enkele anderen).
   Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
   
