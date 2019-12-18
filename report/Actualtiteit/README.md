@@ -17,10 +17,10 @@
 ### Lynis
   - Ook gemaakt door de oprichter van 'rkhunter' (en enkele anderen).
   Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
-### LSAT
-
+  
 ### Tiger
-
+  - Tiger is een open source collectie van shell scripts voor beveiligingsauditing en host intrusion detection  voor Unix systemen.
+  Het belangrijkste doel van Tiger is de controle van de systeemconfiguratie en de status. 
 
 ## Motivatie
 Ik heb gekozen voor deze technologie te implementeren omwille dat ik de beveiling van een server essentieel vindt.
@@ -32,4 +32,5 @@ Ik wil dan ook zorgen door deze tools te implementeren er zo weinig mogelijk kwe
   - https://www.eukhost.com/kb/what-is-rootkit-hunter/
   - https://en.wikipedia.org/wiki/Rkhunter
   - https://en.wikipedia.org/wiki/Lynis
-  
+  - https://www.tecmint.com/tiger-linux-security-audit-intrusion-detection-tool/
+  - http://www.chkrootkit.org/
