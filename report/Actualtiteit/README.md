@@ -14,7 +14,7 @@
     rkhunter zal dit doen doormiddel van de SHA-1 hashes van belangrijke bestanden te vergelijken met de gekende files in de online   databank.
 ### chkrootkit
 
-### Lynis
+### Lynis [https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/Lynis.md]
   - Ook gemaakt door de oprichter van 'rkhunter' (en enkele anderen).
   Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
   
