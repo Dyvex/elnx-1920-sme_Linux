@@ -10,9 +10,10 @@
 * **Besluit:** Indien een bedrijf dus zijn data op een cloud gaat hosten is kans groot dat deze linux server(s) gaat gebruiken en aangezien er onvoldoende research hierover is we eigenlijk niet weten welke gevaren er zijn en hoe we deze kunnen tegenhouden.
   
 ### rkhunter
-
+  - Dit is een unix-based tool die gaat scannen voor rootkits ( collectie van software die als kwaadaardig wordt beschouwd), 'backdoors' en     mogelijke lokale exploits zoals onder andere Email injecties,buffer overflows,...
+    rkhunter zal dit doen doormiddel van de SHA-1 hashes van belangrijke bestanden te vergelijken met de gekende files in de online   databank.
 ### chkrootkit
-
+    
 ### Linux Malware Detect
 
 ### Lynis
