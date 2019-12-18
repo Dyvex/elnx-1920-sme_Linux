@@ -15,4 +15,9 @@
 #  - pu001
 
 #mogelijke error!
-  
+security:
+  - pu001
+  - pr001
+  - pr002
+  - pr003
+  - pr011

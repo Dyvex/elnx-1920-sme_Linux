@@ -14,7 +14,9 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
-    - lyrasis.linux-security
+    - rkhunter
+    - mablanco.lynis
+    
 ## dns_masterserver ##
 - hosts: pr001
   become: true
@@ -43,4 +45,3 @@
     - bertvv.rh-base
     - bertvv.samba
     - bertvv.vsftpd
-  

@@ -20,8 +20,7 @@ wordpress_password: CorkIgWac
 #httpd configuratie
 httpd_ssl_certificate_file: 'ca.crt'
 httpd_ssl_certificate_key_file: 'ca.key'
-
-#OP TE LOSSEN ERROR: geen connectie met 192.0.2.10/wordpress
-#Dit KAN komen doordat het certificaat de naam 'Dylano' heeft en niet '192.0.2.10'
-##   (mogelijke)   OPLOSSING     ##
-# Nieuw ceritficaat laten genereren met CN/naam = 192.0.2.10
+#rkhunter configuratie
+rkhunter_diag_scan: "yes"
+#lynis configuration
+lynis_deploy_method: "git"
