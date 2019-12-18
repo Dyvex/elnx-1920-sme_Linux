@@ -24,3 +24,5 @@ httpd_ssl_certificate_key_file: 'ca.key'
 rkhunter_diag_scan: "yes"
 #lynis configuration
 lynis_deploy_method: "git"
+lynis_report_from: 'dylano.steenhuyzen@hotmail.com'
+lynis_report_to: 'dylano.steenhuyzen.y4659@student.hogent.be'
