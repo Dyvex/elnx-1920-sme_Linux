@@ -7,7 +7,7 @@
   2. **Gebrek aan zichtbaarheid in linux systemen**
   3. **Gebrek aan onderzoek**,dit komt natuurlijk weer door het feit dat er veel meer mensen windows-gestuurde systeem hebben en als gevolg ook niet voldoende weten over de gevaren die zich kunnen bevinden in dit systeem
   4. **Gebrek aan technieken**
-* **Besluit:** Indien een bedrijf dus zijn data op een cloud gaat hosten is kans groot dat deze linux server(s) gaat gebruiken en aangezien er onvoldoende research hierover is we eigenlijk niet weten welke gevaren er zijn en hoe we deze kunnen tegenhouden.
+* **Besluit:** Indien een bedrijf dus zijn data op een cloud gaat hosten is de kans groot dat deze (een) linux server(s) gaat gebruiken, Aangezien er onvoldoende research hierover bestaat en we dus eigenlijk niet weten welke threads er kunnen optreden kunnen we hier ons ook moeilijk op voorbereiden.
 
 ### Verschillende mogelijkheden:
 #### [rkhunter](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Actualtiteit/Testing/rkhunter.md)
@@ -21,7 +21,7 @@
 #### chkrootkit
 #### Tiger
   - Tiger is een open source collectie van shell scripts voor beveiligingsauditing en host intrusion detection  voor Unix systemen.
-  Het belangrijkste doel van Tiger is de controle van de systeemconfiguratie en de status. Deze heeft dezelfde functie as lynis maar het grote voordeel is dat lynis nog steeds onderhouden en gepatcht wordt wat niet meer het geval is bij Tiger
+  Het belangrijkste doel van Tiger is de controle van de systeemconfiguratie en de status. Deze heeft dezelfde functie as lynis maar het grote voordeel is dat lynis nog steeds onderhouden en gepatcht wordt wat niet meer het geval is bij Tiger.
 ## Motivatie
 Ik heb gekozen voor deze technologie te implementeren omwille dat ik de beveiling van een server essentieel vindt.
 Mensen en bedrijven willen zich veilig voelen in de digitale wereld,ze willen niet dat hun privacy geschonden wordt en hun gegevens worden vervalst of gestolen en in de hedendaagse maatschappij krijgen we alsmaar meer te maken met 'cyber-attacks'.
