@@ -19,7 +19,7 @@
   Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
   
 #### chkrootkit
-  - Of voluit 'check rootkit' Het is een shell script die gebruik zal maken van commando's afgaan van elke node in een data tree structuur) in de /proc filesysteem en zal dit als output geven met behulp van het `ps` commando om te kijken voor tegenstrijdigheden.
+  - Of voluit 'check rootkit' Het is een shell script die gebruik zal maken van commando's zoals `strings` en `grep` om te zoeken in de core systeem programma's naar 'signatures' en voor het het vergelijken van een traversal( *= het afgaan van elke node in een data tree structuur*) in de `/proc` filesysteem en zal dit als output geven met behulp van het `ps` commando om te kijken voor tegenstrijdigheden.
   
 #### Tripwire
   - Tripwire is een integriteitschecker voor linux systeembestanden en is alsook open source.Tripwire bestaat uit twee delen: een policy(beleid) en een databank.De policy lijst neemt een soort van snapshot van alle bestanden die de integriteitschecker zou moeten nagaan alsook zal de policy nieuwe regels aanmaken voor de identificatie van de verandering in mappen en bestanden. De databank bestaat dus uit de snapshots van de policy en gaat periodiek controleren op veranderingen en zal reporteren bij de wijziging van (een) bestand(en).
