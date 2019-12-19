@@ -1,5 +1,5 @@
 # Rkhunter testen en toepassen
-## Initiele testen eerst uitvoeren
+## Initiele testen uitvoeren
 1. `sudo rkhunter --update` om de database files up te daten / te refreshen (essentieel voor het systeem up-to-date te houden)
   ```
   [root@pu001 lynis]# sudo rkhunter --update
