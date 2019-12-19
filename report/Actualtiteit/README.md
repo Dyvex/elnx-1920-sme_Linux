@@ -19,6 +19,9 @@
   Deze beveiligingsaudit tool is gemaakt om beheerders te helpen hun beveiling te scannen en het systeem te verstevigen doormiddel van 'system hardening' wat dus betekent `het verminderen van kwetsbaarheden in een systeem en hierdoor een sterkere infrastructuur opbouwen`
   
 #### chkrootkit
+#### Tripwire
+  - Tripwire is een integriteitschecker voor linux systeembestanden en is alsook open source.Tripwire bestaat uit twee delen: een policy(beleid) en een databank.De policy lijst neemt een soort van snapshot van alle bestanden die de integriteitschecker zou moeten nagaan alsook zal de policy nieuwe regels aanmaken voor de identificatie van de verandering in mappen en bestanden. De databank bestaat dus uit de snapshots van de policy en gaat periodiek controleren op veranderingen en zal reporteren bij de wijziging van (een) bestand(en).
+  
 #### Tiger
   - Tiger is een open source collectie van shell scripts voor beveiligingsauditing en host intrusion detection  voor Unix systemen.
   Het belangrijkste doel van Tiger is de controle van de systeemconfiguratie en de status. Deze heeft dezelfde functie as lynis maar het grote voordeel is dat lynis nog steeds onderhouden en gepatcht wordt wat niet meer het geval is bij Tiger.
@@ -34,3 +37,6 @@ Ik wil dan ook zorgen door deze tools te implementeren er zo weinig mogelijk kwe
   - https://en.wikipedia.org/wiki/Lynis
   - https://www.tecmint.com/tiger-linux-security-audit-intrusion-detection-tool/
   - http://www.chkrootkit.org/
+  - https://opensource.com/article/18/1/securing-linux-filesystem-tripwire
+  - https://www.seanmancini.com/2018/07/4-tools-to-audit-your-linux-server/
+  - https://linuxsecurity.expert/compare/tools/lynis-vs-tiger/
