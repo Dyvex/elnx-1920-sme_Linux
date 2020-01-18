@@ -50,12 +50,13 @@
 4. `vagrant ssh pu001` and execute the test `sudo /vagrant/test/runbats.sh`.
   ![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/00-runbats.png)
 5. log out and log in again through SSH connection with `dylano@192.0.2.10`.
-  * **Succesfull**
+    * **Succesfull**
 #### 01-lamp
 1. Execute `vagrant up pu001` Where there failed tasks and/or services ?
 2. `vagrant ssh pu001` and execute the tests again with `sudo /vagrant/test/runbats.sh`.
   ![Image4](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/01-Lamp_runbats.png)
 3. Are http and https accessible through the internet?
+    * Yes,it is accessible as proven on the test.
 4. Surf to *192.0.2.10/wordpress*
 5. Is the database 'wp_db' made and does the user 'wp_user' have the necessary rights assigned to him?
 ## Resources
