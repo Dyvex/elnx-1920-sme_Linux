@@ -53,11 +53,13 @@
     * **Succesfull**
 #### 01-lamp
 1. Execute `vagrant up pu001` Where there failed tasks and/or services ?
+  ![Image5](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/vagrantup.png)
 2. `vagrant ssh pu001` and execute the tests again with `sudo /vagrant/test/runbats.sh`.
   ![Image4](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/01-Lamp_runbats.png)
 3. Are http and https accessible through the internet?
     * Yes,it is accessible as proven on the test.
 4. Surf to *192.0.2.10/wordpress*
+    * **Succesful**
 5. Is the database 'wp_db' made and does the user 'wp_user' have the necessary rights assigned to him?
 ## Resources
 * Werking van Vagrant en Virtualbox:
@@ -78,4 +80,4 @@
 * Eigen troubleshoot-guide en de slides van Entreprise linux over de eerste test:
     - https://github.com/Dyvex/Troubleshooting_cheat-sheet/blob/master/Cheatsheet-troubleshooting.md
     - https://hogenttin.github.io/elnx-syllabus/troubleshooting/#/title-slide
-List all sources of useful information that you encountered while completing this assignment: books, manuals, HOWTO's, blog posts, etc.
+
