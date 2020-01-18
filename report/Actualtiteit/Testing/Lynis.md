@@ -1,5 +1,6 @@
 # Lynis testen en toepassen
   1. Eens Lynis geinstalleerd is kan je gaan kijken **als root gebruiker** in /opt/lynis of alles correct geconfigureerd is.
+    * Sidenote: Het is belangrijk dat je lynis uitvoert als je in /opt/lynis zit en dan `./lynis audit system` doet
   2. Om lynis te gebruiken hoef je je enkel aan het volgend patroon te houden: `lynis command [options]`
       ```
       
