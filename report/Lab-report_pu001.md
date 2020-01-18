@@ -44,23 +44,24 @@
 1. Go to the projectfolder  on the host system.
   * **Succesful**
 2. Execute `vagrant status`.
-  ![Image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/Uitvoering_vagrantstatus.png)
+  ![Image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/Uitvoering_vagrantstatus.png)
 3. Execute`vagrant up pu001`.
-  ![Image3](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/Uitvoering_vagrantup.png)
+  ![Image3](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/Uitvoering_vagrantup.png)
 4. `vagrant ssh pu001` and execute the test `sudo /vagrant/test/runbats.sh`.
-  ![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/00-runbats.png)
+  ![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/00-runbats.png)
 5. log out and log in again through SSH connection with `dylano@192.0.2.10`.
     * **Succesfull**
 #### 01-lamp
 1. Execute `vagrant up pu001` Where there failed tasks and/or services ?
-  ![Image5](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/vagrantup.png)
+  ![Image5](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/vagrantup.png)
 2. `vagrant ssh pu001` and execute the tests again with `sudo /vagrant/test/runbats.sh`.
-  ![Image4](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/01-Lamp_runbats.png)
+  ![Image4](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/01-Lamp_runbats.png)
 3. Are http and https accessible through the internet?
     * Yes,it is accessible as proven on the test.
 4. Surf to *192.0.2.10/wordpress*
     * **Succesful**
 5. Is the database 'wp_db' made and does the user 'wp_user' have the necessary rights assigned to him?
+  ![Image6](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pu001/testDB.png)
 ## Resources
 * Werking van Vagrant en Virtualbox:
     - https://hogenttin.github.io/elnx-syllabus/el7/
