@@ -2,12 +2,15 @@
 
 - Student name: 
 - Github repo: <https://github.com/HoGentTIN/elnx-1920-sme-Dyvex.git>
-
-  ### Goal : Setting up a LAMP server
+- Goal : Setting up a LAMP server
 
 ## Test plan
-
-How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
+  - **Server-setup**
+    1. Naar projectfolder op host systeem gaan.
+    2. 'vagrant status' uitvoeren.
+    3. 'vagrant up pu001' uitvoeren.
+    4. 'vagrant ssh pu001' + test common.bats uitvoeren.
+    5. uitloggen en met dylano@192.0.2.10 inloggen via ssh.
 
 ## Procedure/Documentation
 
