@@ -19,14 +19,30 @@
   5. Is the database 'wp_db' made and does the user 'wp_user' have the necessary rights assigned to him?
   
 ## Procedure/Documentation
-   - First I started by importing the role `bertvv.rh-base` in site.yml,then I took the variables that needed to be changed from the 'default' and defined them in `host_var/pu001`
+   #### 00-Server-setup
+   - First I started by importing the role `bertvv.rh-base` in `ansible/site.yml`,then I took the variables that needed to be changed from the 'default' and defined them in `host_var/pu001.yml`
       * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pu001.yml)
-Describe *in detail* how you completed the assignment, with main focus on the "manual" work. It is of course not necessary to copy/paste your code in this document, but you can refer to it with a hyperlink.
-
-Make sure to write clean Markdown code, so your report looks good and is clearly structured on Github.
-
+   - Then I executed the tests which succeeded.
+   #### 01-lamp
+   - First I started by importing the necessary roles again,so I added these:
+      ```
+        - hosts: pu001
+          become: true
+          roles: 
+          - bertvv.rh-base (was already added ofcourse)
+          - bertvv.mariadb
+          - bertvv.httpd
+          - bertvv.wordpress
+      ```
+   - After this I set the variables of the role `bertvv.rh-base` that were required by every server in the `group_vars/all.yml` folder.
+   - Then I went to the roles github pages for the example playbook and the extra information and defined the necessary variables of each role in `host_vars/pu001.yml`
+   - After each succesfull 'up' I went into the machine and executed the test until it fully succeeded.
+      * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pu001.yml)
+      
 ## Test report
-The test report is a transcript of the execution of the test plan, with the actual results. Significant problems you encountered should also be mentioned here, as well as any solutions you found. The test report should clearly prove that you have met the requirements.
+#### 00-server-setup
+![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Testrapporten/pu001/00-runbats.png)
+
 
 ## Resources
 
