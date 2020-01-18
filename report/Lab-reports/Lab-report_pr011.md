@@ -2,18 +2,16 @@
 
 - Student name: Dylano
 - Github repo: <https://github.com/HoGentTIN/elnx-USER.git>
+- Goal: Setting up a File-server with Samba/vsftpd
 
 Describe the goals of the current iteration/assignment in a short sentence.
 
 ## Test plan
 
-How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
+The server can be accurately tested with the test script by executing `sudo /vagrant/test/runbats.sh` and it will go through the correct testfolder(name of the server) and will execute the '.bats' files.
+In this case,the testfiles will be in `/vagrant/test/pr011`
 
 ## Procedure/Documentation
-
-Describe *in detail* how you completed the assignment, with main focus on the "manual" work. It is of course not necessary to copy/paste your code in this document, but you can refer to it with a hyperlink.
-
-Make sure to write clean Markdown code, so your report looks good and is clearly structured on Github.
 
 ## Test report
 
