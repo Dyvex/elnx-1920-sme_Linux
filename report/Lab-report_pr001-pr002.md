@@ -15,7 +15,9 @@
 -At last I executed the tests which succeeded.
 ## Test report
 #### Test execution pr001 (master-server)
-![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr001-pr002/02-runbats_pr001en002.png)
+![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr001-pr002/runbats_pr001.png)
+#### Test execution pr002 (slave-server)
+![Image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr001-pr002/runbats_pr002.png)
 
 
 ## Resources
