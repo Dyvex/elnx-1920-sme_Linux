@@ -14,8 +14,8 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
-    - rkhunter
     - mablanco.lynis
+    #- rkhunter
 ## dns_masterserver ##
 - hosts: pr001
   become: true
