@@ -5,13 +5,19 @@
 - Goal : Setting up a LAMP server
 
 ## Test plan
-  - **Server-setup**
-    a. Naar projectfolder op host systeem gaan.
-    b. `vagrant status` uitvoeren.
-    c. `vagrant up pu001` uitvoeren.
-    d. `vagrant ssh pu001` + test common.bats uitvoeren.
-    e. uitloggen en met `dylano@192.0.2.10` inloggen via ssh.
-
+  #### 00-Server-setup
+  1. Naar projectfolder op host systeem gaan.
+  2. `vagrant status` uitvoeren.
+  3. `vagrant up pu001` uitvoeren.
+  4. `vagrant ssh pu001` + test common.bats uitvoeren.
+  5. uitloggen en met `dylano@192.0.2.10` inloggen via ssh.
+  #### 01-lamp
+  1. `vagrant up pu001` uitvoeren,zijn er taken/services gefaald?
+  2. `vagrant ssh pu001` en lamp.bats uitvoeren
+  3. Zijn http en https toegankelijk op het internet?
+  4. Surfen naar *192.0.2.10/wordpress*
+  5. Is er een database 'wp_db' aangemaakt en heeft de 'wp_user' de nodige rechten?
+  
 ## Procedure/Documentation
 
 Describe *in detail* how you completed the assignment, with main focus on the "manual" work. It is of course not necessary to copy/paste your code in this document, but you can refer to it with a hyperlink.
