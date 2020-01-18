@@ -1,1 +1,0 @@
-Both servers can be validated with the test scripts. Execute `sudo /vagrant/test/runbats.sh` on each host to run them. Remark that these tests run locally on the VMs. Ensure that both DNS services are also available from your host system! Add the necessary steps to do this to your test plan and test report!
