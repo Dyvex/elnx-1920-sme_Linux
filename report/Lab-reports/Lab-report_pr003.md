@@ -31,7 +31,7 @@
  
  - As you could see, I gained an address from the correct subnet pool as well being able to ping my dhcp server. I wasn't able to do this before executing the two commands shown above.
  
- -To verify,I checked by using the following command: `cat /var/lib/dhclient/dhclient.leases` and gained the following output:
+ - To verify,I checked by using the following command: `cat /var/lib/dhclient/dhclient.leases` and gained the following output:
 ![image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/dhclient.png)
 
 ## Resources
