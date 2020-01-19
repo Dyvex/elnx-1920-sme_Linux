@@ -12,7 +12,19 @@ The server can be accurately tested with the test script by executing `sudo /vag
 In this case,the testfiles will be in `/vagrant/test/pr011`
 
 ## Procedure/Documentation
-
+- First I imported the necessary roles again in site.yml:
+ ```
+ - hosts: pr011
+   become: true
+   roles:
+     - bertvv.rh-base
+     - bertvv.samba
+     - bertvv.vsftpd
+ ```
+- Then I started with defining the variables of samba first in `host_vars/pr011.yml`,once the tests for samba succeeded,I moved on to vsftpd where I had a little bit more troubleshooting to do regarding the acls that didn't work properly.
+- Eventually the test for vsftpd worked as well after consulting Bert and some of my fellow students.
+ * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pr011.yml)
+ 
 ## Test report
 
 ![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr011/runbats_pr011.png)
