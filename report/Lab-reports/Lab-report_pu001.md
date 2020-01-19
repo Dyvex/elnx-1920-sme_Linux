@@ -35,8 +35,8 @@
           - bertvv.wordpress
       ```
    - After this I set the variables of the role `bertvv.rh-base` that were required by every server in the `group_vars/all.yml` folder.
-   - Then I went to the roles github pages for the example playbook and the extra information and defined the necessary variables of each role in `host_vars/pu001.yml`
-   - After each succesfull 'up' I went into the machine and executed the test until it fully succeeded.
+   - Then I went to the roles github pages for the example playbook and the extra information to define the necessary variables of each role in `host_vars/pu001.yml`
+   - After each succesful 'up' I went into the machine and executed the test until it fully succeeded.
       * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pu001.yml)
       
 ## Test report
