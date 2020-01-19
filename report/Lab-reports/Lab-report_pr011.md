@@ -4,7 +4,6 @@
 - Github repo: <https://github.com/HoGentTIN/elnx-USER.git>
 - Goal: Setting up a File-server with Samba/vsftpd
 
-Describe the goals of the current iteration/assignment in a short sentence.
 
 ## Test plan
 
