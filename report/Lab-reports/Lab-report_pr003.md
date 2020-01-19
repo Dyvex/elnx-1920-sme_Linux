@@ -5,18 +5,17 @@
 - Goal: Setting up a DHCP-server and configuring the router
 
 ## Test plan
-
-
+- Create a new VirtualBox VM manually, give it two host-only network interfaces, both attached to the VirtualBox host-only network with IP 172.16.0.0/16.
+- Write down the MAC address of one of the two interfaces (or set it manually, e.g. "DE:AD:C0:DE:CA:FE")
+     * ensure the DHCP gives that host a reserved IP address from the correct address range.
+     * Both network interfaces can be attached at the same time, but you could disconnect the cable of one
+- Boot the VM with a LiveCD ISO (e.g. Fedora, but Ubuntu, Kali, etc. should also be fine).
 
 ## Procedure/Documentation
-- Create a new VirtualBox VM manually, give it two host-only network interfaces, both attached to the VirtualBox host-only network with IP 172.16.0.0/16.
-- Write down the MAC address of one of the two interfaces (or set it manually, e.g. "DE:AD:C0:DE:CA:FE"), and ensure the DHCP gives that        host a reserved IP address from the correct address range.
-     Both network interfaces can be attached at the same time, but you could disconnect the cable of one
-- Boot the VM with a LiveCD ISO (e.g. Fedora, but Ubuntu, Kali, etc. should also be fine).
 
 ## Test report
 
-The test report is a transcript of the execution of the test plan, with the actual results. Significant problems you encountered should also be mentioned here, as well as any solutions you found. The test report should clearly prove that you have met the requirements.
+
 
 ## Resources
 * De algemene dhcp manual van linux:    
