@@ -2,19 +2,17 @@
 
 - Student name: Dylano Steenhuyzen 
 - Github repo: <https://github.com/HoGentTIN/elnx-1920-sme-Dyvex.git>
-- Goal: Setting up a DHCP-server
-
-Describe the goals of the current iteration/assignment in a short sentence.
+- Goal: Setting up a DHCP-server and configuring the router
 
 ## Test plan
 
-How are you going to verify that the requirements are met? The test plan is a detailed checklist of actions to take, including the expected result for each action, in order to prove your system meets the requirements. Part of this is running the automated tests, but it is not always possible to validate *all* requirements throught these tests.
+
 
 ## Procedure/Documentation
-
-Describe *in detail* how you completed the assignment, with main focus on the "manual" work. It is of course not necessary to copy/paste your code in this document, but you can refer to it with a hyperlink.
-
-Make sure to write clean Markdown code, so your report looks good and is clearly structured on Github.
+- Create a new VirtualBox VM manually, give it two host-only network interfaces, both attached to the VirtualBox host-only network with IP 172.16.0.0/16.
+- Write down the MAC address of one of the two interfaces (or set it manually, e.g. "DE:AD:C0:DE:CA:FE"), and ensure the DHCP gives that        host a reserved IP address from the correct address range.
+     Both network interfaces can be attached at the same time, but you could disconnect the cable of one
+- Boot the VM with a LiveCD ISO (e.g. Fedora, but Ubuntu, Kali, etc. should also be fine).
 
 ## Test report
 
