@@ -15,7 +15,7 @@ In this case,the testfiles will be in `/vagrant/test/pr011`
 
 ## Test report
 
-[Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr011/runbats_pr011.png)
+![Image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr011/runbats_pr011.png)
 
 ## Resources
   * Gebruik van Bert zijn github-repo over samba en vsftpd:
