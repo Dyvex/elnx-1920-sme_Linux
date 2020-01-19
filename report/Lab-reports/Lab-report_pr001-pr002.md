@@ -5,7 +5,7 @@
 - Goal: Setting up a DNS master-server and slave-server
 
 ## Test plan
-- Both servers can be validated with the test scripts. Execute sudo /vagrant/test/runbats.sh on each host to run them. Remark that these tests run locally on the VMs. Ensure that both DNS services are also available from your host system! Add the necessary steps to do this to your test plan and test report!
+- Both servers can be validated with the test scripts. Execute `sudo /vagrant/test/runbats.sh` on each host to run them. Remark that these tests run locally on the VMs. Ensure that both DNS services are also available from your host system! Add the necessary steps to do this to your test plan and test report!
 
 ## Procedure/Documentation
 - First I started by importing the role bertvv.rh-base in ansible/site.yml,then I took the variables that needed to be changed from the 'default' and defined them in `host_var/pr001.yml` and `host_vars/pr002.yml`
