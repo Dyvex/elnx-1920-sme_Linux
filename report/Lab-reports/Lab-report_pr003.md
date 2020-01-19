@@ -12,6 +12,10 @@
 - Boot the VM with a LiveCD ISO (e.g. Fedora, but Ubuntu, Kali, etc. should also be fine).
 
 ## Procedure/Documentation
+- I'd like to start by saying that the dhcp server was the most difficult regarding the configuration. So again I imported the necessary role,`bertvv.dhcp` in my `site.yml`.
+- After that,I look at the example playbook and README.md of the dhcp role github page to see how it works.
+- Then I started configurating always upping and destroying until I finally did the correct configuration.
+- To verify,I had to make a virtualbox manually and make the dhcp server assign it an address of the correct pool that eventually worked.
 
 ## Test report
 - So I started with manually putting up a box 'test-werkstation' in VBox,there I also inserted the necessary CentOS-7.7 iso.
