@@ -14,8 +14,22 @@
 ## Procedure/Documentation
 
 ## Test report
-
-
+- So I started with manually putting up a box 'test-werkstation' in VBox,there I also inserted the necessary CentOS-7.7 iso.
+- Then I defined two host-only adapters ( 172.16.0.0/24).
+- After the installation of the box I first defined the host in `host_vars/pr003.yml`as:
+    ```
+    dhcp_hosts:
+      - name: Test-werkstation
+        mac: 08:00:27:8f:03:54
+        ip: 172.16.128.20
+    ```
+- The following step was to boot the client and configurate it as a dhcp client,now then I had to use two very important commands to achieve this:
+    * `sudo ip link set dev enp0s3 down`
+    * `sudo dhclient enp0s3`
+- To test if it worked I used `ip a` or `ip addr show` and gained the following result:
+ ![image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/pr003_config.png)
+ 
+ - As you could see, I gained an address from the correct subnet pool as well being able to ping my dhcp server. I wasn't able to do this before executing the two commands shown above.
 
 ## Resources
 * De algemene dhcp manual van linux:    
