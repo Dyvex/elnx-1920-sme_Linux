@@ -22,7 +22,7 @@ In this case,the testfiles will be in `/vagrant/test/pr011`
  ```
 - Then I started with defining the variables of samba first in `host_vars/pr011.yml`,once the tests for samba succeeded,I moved on to vsftpd where I had a little bit more troubleshooting to do regarding the acls that didn't work properly.
 - Eventually the test for vsftpd worked as well after consulting Bert and some of my fellow students.
- * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pr011.yml)
+  * [Link to configuration](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/ansible/host_vars/pr011.yml)
  
 ## Test report
 
