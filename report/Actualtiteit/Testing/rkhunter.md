@@ -1,4 +1,6 @@
 # Rkhunter testen en toepassen
+  - We gebruiken rkhunter om ons **te verdedigen tegen rootkits*** want rootkits zijn zeer moeilijk te detecteren en infecteren het systeem vaak zonder dat de gebruiker dat beseft. Het enige doel van een rootkit is het aanmaken en verbergen van bestanden,netwerkverbindingen, geheugenadressen en registeringangen.
+      - Het doel van rootkits is om het besturingssysteem instabiel te maken en dit willen we vermijden want eens de rootkit er is is het zeer moeilijk deze te verwijderen zonder het besturingssysteem te beschadigen.
 ## Initiele testen uitvoeren
 1. `sudo rkhunter --update` om de database files up te daten / te refreshen (essentieel voor het systeem up-to-date te houden)
   ```
