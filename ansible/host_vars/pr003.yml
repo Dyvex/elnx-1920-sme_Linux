@@ -24,12 +24,11 @@ dhcp_subnets:
     pools:     
       - range_begin: 172.16.0.2
         range_end: 172.16.127.254     
-        deny: 'members of "vbox"'
+        allow: 'members of "vbox"'
       - range_begin: 172.16.128.1
         range_end: 172.16.191.254
-        allow: 'members of "vbox"'
-#uit-commenten indien aanmaken manueel VBox voor dhcp te testen (op werkstation)
-#dhcp_hosts:
-  #- name: testbox
-    #mac: '08:00:27:B4:64:01'
-    #ip: 172.16.0.10
+        deny: 'members of "vbox"'
+dhcp_hosts:
+  - name: Test-werkstation
+    mac: '08:00:27:1C:A2:0C'
+    ip: 172.16.128.11  

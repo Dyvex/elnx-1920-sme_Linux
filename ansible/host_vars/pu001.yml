@@ -20,6 +20,7 @@ wordpress_password: CorkIgWac
 #httpd configuratie
 httpd_ssl_certificate_file: 'ca.crt'
 httpd_ssl_certificate_key_file: 'ca.key'
+
 #rkhunter configuratie
 rkhunter_diag_scan: "yes"
 #lynis configuration
