@@ -31,12 +31,12 @@
     * `sudo ip link set dev enp0s3 down`
     * `sudo dhclient enp0s3`
 - To test if it worked I used `ip a` or `ip addr show` and gained the following result:
- ![image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/pr003_config.png)
+ ![image1](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/pr003_juisteip.png)
  
  - As you could see, I gained an address from the correct subnet pool as well being able to ping my dhcp server. I wasn't able to do this before executing the two commands shown above.
  
  - To verify,I checked by using the following command: `cat /var/lib/dhclient/dhclient.leases` and gained the following output:
-![image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/dhclient.png)
+![image2](https://github.com/HoGentTIN/elnx-1920-sme-Dyvex/blob/master/report/Images/pr003/pr003_leases.png)
 
 ## Resources
 * De algemene dhcp manual van linux:    
